@@ -8,11 +8,26 @@ from wagtail.documents import urls as wagtaildocs_urls
 
 from search import views as search_views
 
+from drf_spectacular.views import (
+    SpectacularAPIView,
+    SpectacularRedocView,
+    SpectacularSwaggerView,
+)
+from rest_framework.routers import DefaultRouter as DR
+
 urlpatterns = [
     path("django-admin/", admin.site.urls),
     path("admin/", include(wagtailadmin_urls)),
     path("documents/", include(wagtaildocs_urls)),
     path("search/", search_views.search, name="search"),
+    path("bot/", include("botservices.urls")),
+    path("api-app-auth/", include("rest_framework.urls")),
+    path("api-app/schema/", SpectacularAPIView.as_view(), name="schema"),
+    path(
+        "api-app/schema/swagger-ui/",
+        SpectacularSwaggerView.as_view(url_name="schema"),
+        name="swagger-ui",
+    ),
 ]
 
 

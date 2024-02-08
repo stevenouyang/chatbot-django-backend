@@ -1,0 +1,314 @@
+{
+    "intents": [
+        {
+            "tag": "Sapaan Awal",
+            "patterns": [
+                "Halo",
+                "Selamat Pagi",
+                "Selamat Siang",
+                "Selamat Sore",
+                "Selamat Malam",
+                "Hai",
+                "Hai Astralis",
+                "Hai Tim",
+                "Hai, saya mencari bantuan dari Astralis",
+                "Halo! Saya baru di sini, bagaimana cara kerja Astralis?",
+                "Salam",
+                "Pagi",
+                "Sore",
+                "Malam",
+                "Hai, Astralis",
+                "Apakabar?",
+                "Ada yang bisa dibantu?",
+                "Hai, saya ingin berbicara dengan tim Astralis"
+            ],
+            "responses": [
+                "Halo! Selamat datang di layanan customer service dan marketing Astralis. Bagaimana saya dapat membantu Anda hari ini?"
+            ]
+        },
+        {
+            "tag": "Keamanan",
+            "patterns": [
+                "Bagaimana Astralis menjaga keamanan proyek?",
+                "Apakah ada perhatian khusus terhadap keamanan di Astralis?",
+                "Keamanan proyek di Astralis",
+                "Bagaimana kebijakan keamanan di proyek Astralis?",
+                "Apa langkah-langkah keamanan yang diambil di Astralis?",
+                "Bagaimana cara Astralis melindungi proyek dari ancaman keamanan?",
+                "Apakah Astralis menggunakan enkripsi data dalam pengembangan proyek?",
+                "Keamanan siber menjadi prioritas Astralis, bagaimana cara mereka menghadapinya?",
+                "Bagaimana cara Astralis mengikuti perkembangan terbaru di bidang keamanan siber?",
+                "Apakah Astralis menyediakan laporan keamanan proyek secara berkala?",
+                "Bagaimana kebijakan Astralis terkait dengan keamanan proyek?",
+                "Apa tindakan pencegahan yang diambil Astralis untuk menjaga keamanan proyek?"
+            ],
+            "responses": [
+                "Keamanan proyek adalah prioritas utama kami. Kami menerapkan praktik keamanan terbaik dalam pengembangan aplikasi, termasuk pengujian keamanan terkini, enkripsi data, dan pembaruan rutin untuk mengatasi potensi risiko keamanan. Kami juga senantiasa mengikuti perkembangan terbaru di bidang keamanan siber."
+            ]
+        },
+        {
+            "tag": "Tahapan Proyek",
+            "patterns": [
+                "Bagaimana tahapan pengembangan proyek di Astralis?",
+                "Proses pengembangan aplikasi di Astralis",
+                "Langkah-langkah pengembangan di Astralis",
+                "Apa saja fase pengembangan proyek yang diterapkan di Astralis?",
+                "Sistem pengembangan apa yang digunakan di Astralis?",
+                "Bagaimana cara Astralis merencanakan pengembangan proyek?",
+                "Apakah ada metode khusus yang digunakan Astralis dalam tahapan pengembangan?",
+                "Berapa lama waktu yang diperlukan untuk menyelesaikan setiap tahap pengembangan proyek?",
+                "Proses internal testing di Astralis",
+                "Bagaimana user testing diintegrasikan dalam tahapan pengembangan proyek?",
+                "Apa yang dilibatkan dalam fase deployment di Astralis?"
+            ],
+            "responses": [
+                "Tahapan pengembangan proyek di Astralis melibatkan perencanaan dan pemilihan framework, desain UI dan UX, pengembangan teknis aplikasi, internal testing, user testing, dan deployment."
+            ]
+        },
+        {
+            "tag": "Maintenance",
+            "patterns": [
+                "Apakah Astralis menyediakan layanan maintenance?",
+                "Bagaimana dengan perawatan aplikasi setelah selesai dikembangkan?",
+                "Apakah ada layanan perawatan setelah proyek selesai?",
+                "Sistem maintenance apa yang diterapkan di Astralis?",
+                "Bagaimana proses perawatan aplikasi di Astralis?",
+                "Apa yang termasuk dalam layanan maintenance server di Astralis?",
+                "Bagaimana Astralis menjaga performa aplikasi setelah peluncuran?",
+                "Adakah layanan pemeliharaan preventif yang ditawarkan Astralis?",
+                "Proses pembaruan fitur berkelanjutan di Astralis",
+                "Bagaimana cara menghubungi tim maintenance Astralis?"
+            ],
+            "responses": [
+                "Tentu, Kami memiliki layanan baik dari Maintenance server, digital marketing hingga pengembangan fitur berkelanjutan. Untuk lebih jelasnya Anda dapat menghubungi kami melalui Whatsapp di nomor 0855-8830-051."
+            ]
+        },
+        {
+            "tag": "Identifikasi Kebutuhan - Web",
+            "patterns": [
+                "Saya ingin bertanya soal web development",
+                "Saya butuh web",
+                "Butuh jasa pembuatan website",
+                "Sedang mencari layanan web development",
+                "Apa saja pilihan layanan pengembangan web di Astralis?",
+                "apakah saya dapat membuat aplikasi web?",
+                "apakah saya bisa membuat aplikasi web?",
+                "Bagaimana cara memulai pembuatan situs web di Astralis?",
+                "Saya tertarik dengan pengembangan web, dapatkah Anda memberikan informasi lebih lanjut?",
+                "Apa yang perlu dipersiapkan sebelum memulai proyek pengembangan situs web?",
+                "Bagaimana Astralis membantu dalam identifikasi kebutuhan pengembangan web?",
+                "Adakah jenis layanan pengembangan web khusus yang ditawarkan Astralis?"
+            ],
+            "responses": [
+                "Supaya saya dapat membantu Anda dengan lebih baik, mungkin Anda bisa memberikan sedikit informasi tentang tujuan utama situs web yang Anda inginkan. Apakah Anda ingin membuat situs perusahaan, toko online, atau mungkin platform untuk berbagi informasi khusus? Tergantung dari kebutuhannya, kami dapat memberikan solusi yang lebih sesuai dengan kebutuhan perusahaan Anda."
+            ]
+        },
+        {
+            "tag": "Identifikasi Kebutuhan - Mobile",
+            "patterns": [
+                "Saya mau membuat aplikasi mobile",
+                "Saya tertarik untuk membuat aplikasi",
+                "Butuh bantuan dalam pembuatan aplikasi mobile",
+                "Apa saja jenis aplikasi mobile yang bisa dibuat di Astralis?",
+                "Bagaimana proses pengembangan aplikasi mobile di Astralis?",
+                "Apakah saya bisa membuat aplikasi Android di Astralis?",
+                "Apakah Astralis mendukung pembuatan aplikasi iOS?",
+                "Saya ingin mendiskusikan ide aplikasi mobile saya, bagaimana caranya?",
+                "Apakah ada persyaratan khusus untuk memulai proyek pembuatan aplikasi mobile?",
+                "Adakah layanan konsultasi untuk membantu identifikasi kebutuhan pengembangan aplikasi mobile di Astralis?",
+                "Bagaimana cara Astralis mendukung klien dalam mengembangkan aplikasi mobile?"
+            ],
+            "responses": [
+                "Baik, Apakah Anda sudah memiliki konsep atau ide spesifik untuk aplikasi mobile Anda? Apakah ada preferensi bahasa pemrograman khusus? Kami dapat membantu Anda mulai dari perencanaan, pengembangan hingga perilisan. Untuk lebih jelasnya Anda dapat menghubungi kami melalui Whatsapp di nomor 0855-8830-051."
+            ]
+        },
+        {
+            "tag": "Informasi Umum - Astralis",
+            "patterns": [
+                "apa itu astralis?",
+                "Bagaimana Astralis bisa membantu saya?",
+                "Saya ingin tahu lebih banyak tentang Astralis",
+                "Apa layanan yang ditawarkan oleh Astralis?",
+                "Apa yang membuat Astralis berbeda dari perusahaan pengembangan lain?",
+                "Bagaimana cara Astralis memastikan kualitas layanan?",
+                "Apakah Astralis memiliki visi dan misi tertentu dalam industri pengembangan?",
+                "Saya ingin memahami filosofi kerja di Astralis",
+                "Apa yang menjadi fokus utama Astralis dalam setiap proyek yang mereka tangani?",
+                "Bagaimana cara Astralis beradaptasi dengan perkembangan teknologi terbaru?",
+                "Apakah ada nilai inti yang menjadi landasan kerja Astralis?"
+            ],
+            "responses": [
+                "Kami merupakan penyedia jasa pembuatan aplikasi custom di Indonesia, kami dapat mengembangkan aplikasi website, mobile, microservices maupun dekstop secara custom. Kamu juga menyediakan layanan kami dengan harga yang relatif terjangkau dan dengan interface yang intuitive"
+            ]
+        },
+        {
+            "tag": "Informasi Umum - Badan Usaha",
+            "patterns": [
+                "Apakah Astralis sudah memiliki badan usaha?",
+                "Status badan hukum Astralis",
+                "Bagaimana Astralis diatur secara hukum?",
+                "Apakah Astralis terdaftar sebagai perusahaan?",
+                "Apa legalitas Astralis sebagai penyedia jasa pengembangan aplikasi?",
+                "Adakah regulasi tertentu yang harus diikuti Astralis dalam operasionalnya?",
+                "Bagaimana Astralis memastikan kepatuhan hukum dalam setiap proyek yang mereka tangani?",
+                "Apakah Astralis bekerja dengan standar etika dan norma yang berlaku di industri pengembangan?",
+                "Bagaimana proses pembayaran diatur dari segi hukum di Astralis?",
+                "Apakah ada peraturan khusus yang mengatur pembayaran proyek di Astralis?"
+            ],
+            "responses": [
+                "Untuk saat ini, kami belum memiliki badan usaha dan masih terhitung sebagai usaha UMKM."
+            ]
+        },
+        {
+            "tag": "Informasi Umum - Tanggal Pendirian",
+            "patterns": [
+                "Kapan Astralis didirikan?",
+                "Sejak kapan Astralis beroperasi?",
+                "Berapa lama Astralis telah berkecimpung di industri pengembangan aplikasi?",
+                "Apakah ada pencapaian tertentu yang diraih oleh Astralis sejak didirikan?",
+                "Bagaimana perjalanan Astralis sejak pertama kali berdiri?",
+                "Apa yang mendorong pendirian Astralis?"
+            ],
+            "responses": [
+                "Astralis didirikan dan resmi beroperasi pada Januari 2024."
+            ]
+        },
+        {
+            "tag": "Informasi Umum - Lokasi Kantor",
+            "patterns": [
+                "Dimana alamat kantor Astralis?",
+                "Lokasi fisik kantor Astralis",
+                "Apakah Astralis memiliki kantor fisik?",
+                "Bagaimana cara mengunjungi kantor Astralis?",
+                "Adakah kantor cabang Astralis di daerah tertentu?",
+                "Bagaimana sistem kerja remote di Astralis?"
+            ],
+            "responses": [
+                "Untuk saat ini, kami bekerja dengan metode 100% remote working seperti jasa freelance pada umumnya."
+            ]
+        },
+        {
+            "tag": "Informasi Umum - Keuntungan Aplikasi",
+            "patterns": [
+                "Apa keuntungan membuat aplikasi di Astralis?",
+                "Apa saja manfaat yang dapat saya dapatkan dengan menggunakan layanan Astralis dalam pengembangan aplikasi?",
+                "Mengapa saya harus memilih Astralis untuk mengembangkan aplikasi saya?",
+                "Apa yang menjadi keunggulan Astralis dibandingkan dengan perusahaan pengembangan aplikasi lainnya?",
+                "Bagaimana Astralis memastikan kepuasan klien dalam setiap proyek yang mereka tangani?",
+                "Apa yang membuat Astralis menjadi pilihan utama dalam pengembangan aplikasi?"
+            ],
+            "responses": [
+                "Kami dapat membuat aplikasi custom dengan biaya yang relatif murah. Kami juga memberikan layanan rapid development yang memastikan aplikasi yang Anda buat dapat rilis lebih cepat."
+            ]
+        },
+        {
+            "tag": "Informasi Umum - Waktu Pembuatan Aplikasi",
+            "patterns": [
+                "Berapa lama waktu yang dibutuhkan untuk membuat aplikasi di Astralis?",
+                "Estimasi waktu pembuatan aplikasi di Astralis",
+                "Apakah ada batasan waktu dalam pengembangan aplikasi di Astralis?",
+                "Bagaimana Astralis memastikan proyek dapat diselesaikan sesuai jadwal yang ditentukan?",
+                "Adakah faktor tertentu yang dapat mempengaruhi waktu pembuatan aplikasi di Astralis?",
+                "Bagaimana cara Astralis menangani proyek dengan tenggat waktu yang ketat?",
+                "Apakah ada layanan pengembangan aplikasi yang dapat diselesaikan dengan cepat di Astralis?",
+                "Apa yang dapat dilakukan Astralis untuk mempercepat waktu pembuatan aplikasi?"
+            ],
+            "responses": [
+                "Waktu yang diperlukan untuk membuat aplikasi di Astralis bergantung pada kompleksitas aplikasi yang Anda ingin kembangkan. Sebagai tolak ukur, untuk membuat website company profile kami membutuhkan waktu kurang lebih 2 minggu untuk website landing page custom. Untuk informasi lebih lanjut, silakan hubungi kami melalui Whatsapp di nomor 0855-8830-051."
+            ]
+        },
+        {
+            "tag": "Kontak - Whatsapp",
+            "patterns": [
+                "Apakah ada nomor Whatsapp yang bisa saya hubungi?",
+                "Bagaimana cara menghubungi via Whatsapp?",
+                "Dapatkah saya berkomunikasi dengan tim Astralis melalui Whatsapp?",
+                "Apakah Whatsapp merupakan saluran komunikasi utama dengan Astralis?",
+                "Bagaimana prosedur kontak melalui Whatsapp di Astralis?",
+                "Adakah batasan waktu untuk menghubungi tim Astralis melalui Whatsapp?",
+                "Bagaimana jika saya memiliki pertanyaan mendesak dan perlu segera dijawab melalui Whatsapp?"
+            ],
+            "responses": [
+                "Tentu saja! Anda dapat menghubungi kami di Whatsapp 0855-8830-051."
+            ]
+        },
+        {
+            "tag": "Kontak - Email",
+            "patterns": [
+                "Apakah ada email yang bisa saya hubungi?",
+                "Cara menghubungi melalui email di Astralis",
+                "Apakah email merupakan saluran komunikasi yang dapat diandalkan dengan Astralis?",
+                "Bagaimana proses komunikasi melalui email di Astralis?",
+                "Adakah alamat email khusus untuk keperluan teknis di Astralis?",
+                "Bagaimana jika saya memiliki lampiran atau dokumen yang perlu saya sampaikan melalui email?",
+                "Apakah ada batasan ukuran file dalam pengiriman melalui email kepada Astralis?",
+                "Berapa lama waktu tanggapan yang dapat diharapkan melalui email dari Astralis?"
+            ],
+            "responses": [
+                "Tentu saja! Untuk pertanyaan seputar marketing, Anda dapat mengirimkan email ke marketing@astralis.id. Untuk kebutuhan teknis, Anda dapat mengirimkan email ke support@astralis.id."
+            ]
+        },
+        {
+            "tag": "Golang",
+            "patterns": [
+                "Apakah bapak bisa membuat aplikasi berbasis Golang?",
+                "Layanan pengembangan aplikasi Golang di Astralis",
+                "Apakah Astralis memiliki pengembang berpengalaman dalam Golang?",
+                "Saya tertarik dengan pengembangan aplikasi menggunakan Golang di Astralis, bagaimana cara memulai?",
+                "Apakah Golang merupakan pilihan yang direkomendasikan untuk proyek saya?",
+                "Adakah proyek yang sudah berhasil dikerjakan menggunakan Golang oleh Astralis?"
+            ],
+            "responses": [
+                "Iya, tentu saja! Kami memiliki tim pengembang yang berpengalaman dalam membangun aplikasi berbasis Golang. Dengan menggunakan Golang, kami dapat menyediakan solusi yang efisien, handal, dan dapat diandalkan. Jika Anda memiliki kebutuhan spesifik atau ingin mendiskuskan proyek Anda lebih lanjut, silakan beri tahu kami agar kami dapat memberikan solusi yang sesuai dengan kebutuhan Anda."
+            ]
+        },
+        {
+            "tag": "Python",
+            "patterns": [
+                "Apakah bapak bisa membuat aplikasi berbasis Python?",
+                "Layanan pengembangan aplikasi Python di Astralis",
+                "Apakah Astralis memiliki keahlian dalam pengembangan aplikasi dengan Python?",
+                "Saya ingin tahu lebih banyak tentang pengembangan aplikasi Python di Astralis",
+                "Apa framework yang biasa digunakan Astralis dalam pengembangan aplikasi Python?",
+                "Bagaimana Astralis memastikan keberhasilan proyek pengembangan aplikasi Python?",
+                "Adakah proyek sukses yang menggunakan Python sebagai bahasa pemrograman utama di Astralis?"
+            ],
+            "responses": [
+                "Tentu saja! Kami memiliki keahlian dalam membangun aplikasi berbasis Python. Untuk pengembangan web, kami menggunakan framework seperti Django atau Flask untuk memberikan solusi web yang tangguh dan efisien. Selain itu, kami juga menyediakan layanan pengembangan AI menggunakan Python untuk memenuhi kebutuhan kecerdasan buatan. Jika ada spesifikasi atau fitur tertentu yang Anda inginkan, beri tahu kami agar kami dapat menyusun solusi yang sesuai dengan kebutuhan Anda."
+            ]
+        },
+        {
+            "tag": "Flutter",
+            "patterns": [
+                "Apakah bisa membuat aplikasi berbasis Flutter?",
+                "Layanan pembuatan aplikasi multiplatform dengan Flutter di Astralis",
+                "Apakah Astralis memiliki pengembang Flutter yang berpengalaman?",
+                "Saya tertarik dengan pengembangan aplikasi menggunakan Flutter di Astralis, apa langkah pertama yang harus saya ambil?",
+                "Apa keuntungan menggunakan Flutter untuk proyek saya?",
+                "Adakah proyek sukses yang menggunakan Flutter di Astralis?"
+            ],
+            "responses": [
+                "Pasti! Kami memiliki tim pengembang yang berpengalaman dalam membuat aplikasi multiplatform menggunakan Flutter. Flutter dapat memberikan pengalaman pengguna yang konsisten di berbagai platform, seperti iOS dan Android. Jika Anda memiliki ide proyek atau spesifikasi tertentu yang ingin dibahas lebih lanjut, beri tahu kami agar kami dapat memberikan panduan yang lebih detail."
+            ]
+        },
+        {
+            "tag": "Meeting",
+            "patterns": [
+                "bagaimana cara saya menjadwalkan meeting?",
+                "saya ingin mengatur jadwal pertemuan",
+                "apa langkah-langkah untuk membuat jadwal meeting dengan tim Astralis?",
+                "bisa kah saya memesan waktu meeting?",
+                "kapan saya bisa mendapatkan slot meeting?",
+                "saya butuh waktu untuk diskusi, bagaimana caranya?",
+                "adakah batasan waktu untuk membuat janji temu dengan tim Astralis?",
+                "apakah meeting dapat dijadwalkan di luar jam kerja?",
+                "bagaimana prosedur untuk menentukan waktu pertemuan?",
+                "saya ingin melakukan pertemuan, bagaimana langkah selanjutnya?",
+                "bisakah saya mengatur jadwal konsultasi dengan tim Astralis?"
+            ],
+            "responses": [
+                "Untuk menjadwalkan meeting, Anda dapat menghubungi kami melalui Whatsapp di nomor 0855-8830-051. Jadwal meeting yang tersedia antara jam 17.00-21.00 pada hari senin-jumat dan 13.00-18.00 pada hari sabtu minggu"
+            ]
+        }
+    ]
+}
