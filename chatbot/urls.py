@@ -15,12 +15,16 @@ from drf_spectacular.views import (
 )
 from rest_framework.routers import DefaultRouter as DR
 
+from rest_framework import permissions
+from drf_yasg.views import get_schema_view
+from drf_yasg import openapi
+
 urlpatterns = [
     path("django-admin/", admin.site.urls),
     path("admin/", include(wagtailadmin_urls)),
     path("documents/", include(wagtaildocs_urls)),
     path("search/", search_views.search, name="search"),
-    path("bot/", include("botservices.urls")),
+    path("", include("botservices.urls")),
     path("api-app-auth/", include("rest_framework.urls")),
     path("api-app/schema/", SpectacularAPIView.as_view(), name="schema"),
     path(
@@ -29,6 +33,19 @@ urlpatterns = [
         name="swagger-ui",
     ),
 ]
+
+schema_view = get_schema_view(
+    openapi.Info(
+        title="Your API",
+        default_version='v1',
+        description="Your API description",
+        terms_of_service="https://www.yourapp.com/terms/",
+        contact=openapi.Contact(email="contact@yourapp.com"),
+        license=openapi.License(name="Your License"),
+    ),
+    public=True,
+    permission_classes=(permissions.AllowAny,),
+)
 
 
 if settings.DEBUG:

@@ -1,0 +1,146 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="{% static 'logo/astralis.ico' %}">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Chat Room</title>
+    <style>
+      body {
+        font-family: 'Ubuntu', sans-serif !important;
+        background-color: #ffffff !important;
+        color: #000000 !important;
+      }
+
+      .container {
+        background-color: #f3f3f3;
+      }
+
+      #messages {
+        color: #000000;
+      }
+
+      .message-container {
+        margin-bottom: 12px;
+      }
+
+      .user-label, .bot-label {
+        font-size: 12px;
+        color: #ffffff;
+        text-align: center;
+      }
+
+      input {
+        background-color: #e0e0e0;
+        color: #000;
+      }
+
+      .user-message {
+        margin-bottom: 12px;
+      }
+
+      .bot-message {
+        margin-bottom: 12px;
+      }
+
+      #send-btn {
+        background-color: #4a4a4a;
+        color: #fff;
+      }
+
+    </style>
+  </head>
+  <body class="font-sans bg-gray-100">
+
+    <div class="container mx-auto my-8 p-6 bg-white rounded-lg shadow-md">
+      <div class="mb-4 flex justify-between items-center">
+        <h1 class="text-2xl font-bold text-black">Chat Room</h1>
+        <span class="text-gray-400">Astralis Digital Agency</span>
+      </div>
+
+      <div id="chat-container" class="chat-container max-h-100 overflow-y-auto mb-4 mt-auto" style="max-height: 75vh;">
+        <div id="messages" class="flex flex-col space-y-2">
+        </div>
+      </div>
+
+      <div class="flex items-center">
+        <input id="message-input" type="text" placeholder="Type your message..." class="flex-1 p-2 border rounded-lg mr-2">
+        <button id="send-btn" class="px-4 py-2 rounded-lg"><i class="fas fa-paper-plane"></i></button>
+      </div>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        const messagesContainer = document.getElementById('messages');
+        const messageInput = document.getElementById('message-input');
+        const sendBtn = document.getElementById('send-btn');
+
+        function sendMessage() {
+          const messageText = messageInput.value.trim();
+          if (messageText !== '') {
+            const messageContainer = document.createElement('div');
+            messageContainer.className = 'message-container';
+
+            const userMessageElement = document.createElement('div');
+            userMessageElement.className = 'flex items-end justify-end user-message';
+            userMessageElement.innerHTML = `
+              <div class="bg-fuchsia-500 text-white p-2 rounded-lg ml-7">
+                <span class="user-label">User:</span><br>${messageText}
+              </div>
+            `;
+
+            messageContainer.appendChild(userMessageElement);
+            messagesContainer.appendChild(messageContainer);
+
+            messageInput.value = '';
+            messagesContainer.scrollTop = messagesContainer.scrollHeight;
+
+            fetch('/bot/chat/', {
+              method: 'POST',
+              headers: {
+                'Content-Type': 'application/x-www-form-urlencoded',
+                'X-CSRFToken': getCookie('csrftoken'),
+              },
+              body: new URLSearchParams({ 'user_input': messageText }),
+            })
+            .then(response => response.json())
+            .then(data => {
+              const botMessageElement = document.createElement('div');
+              botMessageElement.className = 'flex items-start bot-message';
+              botMessageElement.innerHTML = `
+                <div class="bg-purple-700 text-white p-2 rounded-lg mr-7">
+                  <span class="bot-label">Bot:</span><br>${data.response}
+                </div>
+              `;
+
+              messageContainer.appendChild(botMessageElement);
+              messagesContainer.scrollTop = messagesContainer.scrollHeight;
+            })
+            .catch(error => {
+              console.error('Error sending message:', error);
+            });
+          }
+        }
+
+        sendBtn.addEventListener('click', sendMessage);
+
+        messageInput.addEventListener('keypress', function (event) {
+          if (event.key === 'Enter') {
+            sendMessage();
+          }
+        });
+
+        function getCookie(name) {
+          const value = `; ${document.cookie}`;
+          const parts = value.split(`; ${name}=`);
+          if (parts.length === 2) return parts.pop().split(';').shift();
+        }
+      });
+    </script>
+  </div>
+</body>
+</html>
