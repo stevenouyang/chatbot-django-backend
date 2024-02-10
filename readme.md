@@ -14,7 +14,7 @@ Custom your own :
 
 - demo : https://bot1.astralis.id/
 - demo-admin : https://bot1.astralis.id/admin
-
+- API Docs : https://bot1.astralis.id/api-app/schema/swagger-ui/#/bot/bot_chatbot_create
 
 - user : *tester*
 - password : *astralis123*
